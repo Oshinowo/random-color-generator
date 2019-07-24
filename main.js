@@ -1,16 +1,16 @@
 var originalButton = document.getElementById('original-button');
-var mysteryButton = document.getElementById('mystery-button');
+var mysteryButton = document.getElementById('mystrey-button');
 
 //random number function
 function randomNumber(num) {
-    return Math.floor(Math.round() * num);
+    return Math.floor(Math.random() * num);
 }
 
 // color changing function
-function colorChange(event) {
-    var randomColor = "rgb(" + randomNumber(255) + "," + randomNumber(255) + "," + randomNumber(255) + ")";
-    Event.target.style.backgroundColor = randomColor;
+function colorChange() {
+    var randomColor = 'rgb(' + randomNumber(255) + ',' + randomNumber(255) + ',' + randomNumber(255) + ')';
+    event.target.style.backgroundColor = randomColor;
 }
 
 originalButton.onclick = colorChange;
-mysteryButton.onwheel = colorChange;
+mysteryButton.onmousemove = colorChange;
